@@ -68,8 +68,10 @@ body {
 	color: #fff;
 	border-radius: 0.5rem;
 	position: relative;
-	margin-left: 40%;
+	margin-left: 37%;
+	text-align: center;
 	transition: .4s;
+	width: 25%;
 }
 .btn:hover {
 	transform: scale(1.2) translateY(10px);
@@ -418,6 +420,7 @@ body {
 	}
 	.btn {
 		margin-left: auto;
+		width: 40%;
 	}
 	section {
 		padding: 100px 7%;
