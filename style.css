@@ -56,9 +56,9 @@ body {
 	margin: 1rem 0 2rem;
 	text-align: center;
 }
-.home-text h3 {
+.home h3 {
 	font-size: var(--h3-font);
-	margin: 1rem 0 2rem;
+	padding: 10px;
 	text-align: center;
 }
 .btn {
