@@ -27,7 +27,32 @@ body {
 }
 
 
-/* ===== end of home section ===== */
+/* ===== end of navigation section ===== */
+/* HEADER SECTION */
+nav {
+	background: black;
+	text-align: center;
+	width: 100%;
+	position: fixed;
+}
+ul {
+	list-style-type: none;
+  margin-left: 40%;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+	float: left;
+}
+li a {
+	display: flex;
+	padding: 8px;
+	color: white;
+}
+/* ===== end of navigation section ===== */
+
+
+/* ===== home section ===== */
 .home {
 	background-image: linear-gradient(to top, #f09819 0%, yellow 100%);
 	width: 100%;
@@ -439,6 +464,9 @@ body {
 .credits {
 	padding: 10px;
 	text-align: center;
+}
+.credits h1 {
+	color: whitesmoke;
 }
 .credits img {
 	height: 50px;
