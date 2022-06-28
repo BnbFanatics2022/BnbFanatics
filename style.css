@@ -104,6 +104,15 @@ body {
 	transform: scale(1.2) translateY(10px);
 	transition: .4s;
 }
+.buy-section {
+	margin-top: -50px;
+}
+.about-text {
+	width: 95%;
+}
+.about-text h1{
+	font-size: 30px;
+}
 /* ===== end of home section ===== */
 
 
@@ -455,6 +464,9 @@ body {
 	section {
 		padding: 100px 7%;
 	}
+	#navigation ul {
+  margin-left: 10%;
+}
 }
 /* ===== end of timeline section ===== */
 
