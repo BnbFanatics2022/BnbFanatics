@@ -111,6 +111,10 @@ body {
 }
 .buy-section {
 	margin-top: 130px;
+	border: solid red 5px;
+	width: 500px;
+	margin-left: 75px;
+	padding-bottom: 20px;
 }
 .about-text {
 	width: 95%;
@@ -487,11 +491,13 @@ body {
 }
 .buy-section {
 	margin-top: 10px;
-	padding-left: 8%;
+	width: 80%;
+	padding-bottom: 20px;
+	margin-left: 14%;
 }
 .home-text {
   margin-top: 50px;
-	padding-bottom: 55px;
+	padding-bottom: 60px;
 }
 }
 /* ===== end of timeline section ===== */
