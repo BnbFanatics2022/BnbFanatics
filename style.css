@@ -64,13 +64,18 @@ body {
 	align-items: center;
 	padding-left: 0;
 }
-.home-text, .home-img {
+.home-text {
+	margin-left: 25px;
+  margin-top: 100px;
+}
+.home-img {
  margin-left: 25px;
  margin-top: 25px;
 }
 .home-img img {
 	max-width: 100%;
 	width: 600px;
+	margin-top: -20px;
 	height: auto;
 }
 .home-text h1 {
@@ -105,20 +110,24 @@ body {
 	transition: .4s;
 }
 .buy-section {
-	margin-top: -50px;
+	margin-top: 130px;
 }
 .about-text {
 	width: 95%;
+	margin-top: 120px;
 }
 .about-text h1{
-	font-size: 30px;
+	font-size: 40px;
+}
+.about-text p{
+	font-size: 25px;
 }
 /* ===== end of home section ===== */
-
 
 /* ===== tokenomics section ===== */
 .services {
 	background-image: linear-gradient(to top, #537895 0%, #f09819 100%);
+	padding-top: 30px;
 }
 .services .heading {
 	text-align: center;
@@ -163,7 +172,7 @@ body {
 }
 
 #roadmap h1{
-	padding-top: 15%;
+	padding-top: 5%;
 	text-align: center;
 	font-size: 40px;
 	color: white;
@@ -449,6 +458,8 @@ body {
 	margin: 1em 4em 0 4em;
   }
 }
+
+/*Media Query fpr all*/
 @media (max-width: 720px) {
 	header {
 		padding: 10px 16px;
@@ -466,6 +477,20 @@ body {
 	}
 	#navigation ul {
   margin-left: 10%;
+}
+#roadmap {
+	padding-top: 50px;
+}
+.about-text {
+	padding-left: 10%;
+	margin-top: -20px;
+}
+.buy-section {
+	margin-top: 10px;
+	padding-left: 8%;
+}
+.home-text {
+  margin-top: 50px;
 }
 }
 /* ===== end of timeline section ===== */
