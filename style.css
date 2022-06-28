@@ -40,6 +40,7 @@ body {
 }
 .home-text, .home-img {
  margin-left: 25px;
+ margin-top: 25px;
 }
 .home-img img {
 	max-width: 100%;
@@ -123,6 +124,7 @@ body {
 /* ===== timeline section ===== */
 #roadmap {
 	background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+	padding-bottom: 100px;
 }
 
 #roadmap h1{
@@ -441,6 +443,12 @@ body {
 .credits img {
 	height: 50px;
 	width: 50px;
+	filter: grayscale(1);
+	transition: 0.5s;
+}
+.credits img:hover {
+	filter: grayscale(0);
+	transition: 0.5s;
 }
 .credits p {
 	color: #e1e35f;
