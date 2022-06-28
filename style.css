@@ -132,6 +132,7 @@ body {
 .services {
 	background-image: linear-gradient(to top, #537895 0%, #f09819 100%);
 	padding-top: 30px;
+	padding-bottom: 40px;
 }
 .services .heading {
 	text-align: center;
