@@ -29,27 +29,86 @@ body {
 
 /* ===== end of navigation section ===== */
 /* HEADER SECTION */
-#navigation {
-	background: black;
-	text-align: center;
-	width: 100%;
-	position: fixed;
-	z-index: 1;
-}
-#navigation ul {
-	list-style-type: none;
-  margin-left: 40%;
-  padding: 0;
-  overflow: hidden;
-}
-#navigation li {
-	float: left;
-}
-#navigation li a {
-	display: flex;
-	padding: 8px;
-	color: white;
-}
+nav {
+	 background: rgb(0, 0, 0);
+	 color: rgb(255, 255, 255);
+	 display: flex;
+	 align-items: center;
+	 justify-content: space-between;
+ }
+ nav .mainMenu {
+	 display: flex;
+	 list-style: none;
+ }
+ nav .mainMenu li a {
+	 display: inline-block;
+	 padding: 15px;
+	 text-decoration: none;
+	 text-transform: uppercase;
+	 color: rgb(255, 255, 255);
+	 font-size: 18px;
+	 transition: 0.2s ease;
+ }
+ nav .mainMenu li a:hover {
+	 color: yellow;
+ }
+ nav .openMenu {
+	 font-size: 2rem;
+	 margin: 20px;
+	 display: none;
+	 cursor: pointer;
+ }
+ nav .mainMenu .closeMenu,
+ .icons i {
+	 font-size: 2rem;
+	 display: none;
+	 cursor: pointer;
+ }
+ .fa-twitter:hover {
+	 color: rgb(86, 154, 243);
+ }
+ .fa-telegram:hover {
+	color: #229ED9;
+ }
+ nav .logo {
+	 margin: 6px;
+	 cursor: pointer;
+	 text-transform: uppercase;
+ }
+ @media (max-width: 800px) {
+	 nav .mainMenu {
+		 height: 100vh;
+		 position: fixed;
+		 top: 0px;
+		 right: 0px;
+		 left: 0px;
+		 z-index: 10;
+		 flex-direction: column;
+		 justify-content: center;
+		 align-items: center;
+		 background: rgb(0, 0, 0);
+		 transition: top 1s ease 0s;
+		 display: none;
+	 }
+	 nav .mainMenu .closeMenu {
+		 display: block;
+		 position: absolute;
+		 top: 20px;
+		 right: 20px;
+	 }
+	 nav .openMenu {
+		 display: block;
+	 }
+	 nav .mainMenu li a:hover {
+		 background: none;
+		 color: yellow;
+	 }
+	 .icons i {
+		 display: inline-block;
+		 padding: 12px;
+	 }
+ }
+
 /* ===== end of navigation section ===== */
 
 
