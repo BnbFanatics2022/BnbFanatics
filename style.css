@@ -111,10 +111,11 @@ body {
 }
 .buy-section {
 	margin-top: 130px;
-	border: solid red 5px;
+	border: 10px solid black;
 	width: 500px;
 	margin-left: 75px;
 	padding-bottom: 20px;
+	box-shadow: 10px 10px 25px black;
 }
 .about-text {
 	width: 95%;
