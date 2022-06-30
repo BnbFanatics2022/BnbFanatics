@@ -31,16 +31,15 @@ function addObserver(el, options){
 }
 
 //About Section animation
-scrollTrigger('.about-img')
-scrollTrigger('.col-right')
-scrollTrigger('.about-2')
-scrollTrigger('.about-3')
+scrollTrigger('.about-text')
+scrollTrigger('.buy-section')
+
+//Tokenomics Card animation
+scrollTrigger('.s-box')
 
 //Roadmap Section animation
 scrollTrigger('.box')
 
-//Tokenomics Card animation
-scrollTrigger('.card')
 
 //Team Section Members animation
 scrollTrigger('.team-member')
