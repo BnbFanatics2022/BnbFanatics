@@ -205,7 +205,7 @@ nav {
 	font-size: 50px;
 }
 .about-text p{
-	font-size: 30px;
+	font-size: 25px;
 }
 .buy-section-animation.active {
 	animation: slideUpToDown 1.25s, fade 2.25s;
@@ -219,7 +219,7 @@ nav {
 	position: relative;
 	animation-fill-mode: both;
 }
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
 	.about-text {
 		width: 95%;
 		padding: 10%;
