@@ -31,26 +31,18 @@ function addObserver(el, options){
 }
 
 //About Section animation
-scrollTrigger('.about-img')
-scrollTrigger('.col-right')
-scrollTrigger('.about-2')
-scrollTrigger('.about-3')
-
-//Roadmap Section animation
-scrollTrigger('.box')
+scrollTrigger('.about-text')
+scrollTrigger('.buy-section')
 
 //Tokenomics Card animation
-scrollTrigger('.card')
+scrollTrigger('.s-box')
+
+//Roadmap Section animation
+scrollTrigger('.direction-l')
+scrollTrigger('.direction-r')
 
 //Team Section Members animation
 scrollTrigger('.team-member')
 
-//Twitter Logo Hover animation
-var image = document.getElementById("twt-hover");
-image.onmouseover = function() {  image.src = "img/twt-ani.gif"; }
-image.onmouseout = function() {  image.src = "img/twt-logo.png"; }
-
-//Website Logo Hover animation
-var image2 = document.getElementById("website-hover");
-image2.onmouseover = function() {  image2.src = "img/website-ani.gif"; }
-image2.onmouseout = function() {  image2.src = "img/website-logo.png"; }
+//Footer animation
+scrollTrigger('.footer-img')

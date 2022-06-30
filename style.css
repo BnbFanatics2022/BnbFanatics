@@ -185,6 +185,7 @@ nav {
 	margin-left: 75px;
 	padding-bottom: 20px;
 	box-shadow: 10px 10px 25px black;
+	opacity: 0;
 }
 /* ===== end of home section ===== */
 
@@ -194,10 +195,9 @@ nav {
 	background-image: linear-gradient(to bottom, #fda085 0%, #fda085 100%);
 }
 .about-text {
-	width: 75%;
-	padding-top: 100px;
-	text-align: center;
-	padding-left: 25%;
+	width: 95%;
+	padding-top: 120px;
+	opacity: 0;
 }
 .about-text h1{
 	font-size: 50px;
@@ -205,8 +205,19 @@ nav {
 .about-text p{
 	font-size: 25px;
 }
-/* ===== end of about section ===== */
-
+.buy-section-animation.active {
+	animation: slideUpToDown 1.25s, fade 2.25s;
+	animation-delay: 300ms;
+	position: relative;
+	animation-fill-mode: both;
+}
+.about-text.active {
+	animation: slideDownToUp 1.25s, fade 2.25s;
+	animation-delay: 300ms;
+	position: relative;
+	animation-fill-mode: both;
+}
+/* ===== end of home section ===== */
 
 /* ===== tokenomics section ===== */
 .services {
@@ -221,7 +232,6 @@ nav {
 .service-container {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-		grid-gap: 1.5rem;
 		align-items: center;
 		margin-top: 2rem;
 	}
@@ -232,6 +242,7 @@ nav {
 	.s-box {
 		text-align: center;
 		padding: 20px 30px;
+		opacity: 0;
 	}
 	.s-box img {
 		width: 200px;
@@ -246,7 +257,24 @@ nav {
 		font-size: 1.5rem;
 		font-weight: bold;
 	}
-
+.s-box1-animation.active {
+	animation-name: bounce;
+	animation-duration: 0.7s;
+	animation-delay: 300ms;
+	animation-fill-mode: both;
+}
+.s-box2-animation.active {
+	animation-name: bounce;
+	animation-duration: 0.7s;
+	animation-delay: 400ms;
+	animation-fill-mode: both;
+}
+.s-box3-animation.active {
+	animation-name: bounce;
+	animation-duration: 0.7s;
+	animation-delay: 500ms;
+	animation-fill-mode: both;
+}
 /* ===== end of tokenomics section ===== */
 
 
@@ -310,12 +338,14 @@ nav {
   width: 300px;
   float: left;
   text-align: right;
+	opacity: 0;
 }
 
 .direction-r {
   position: relative;
   width: 300px;
   float: right;
+	opacity: 0;
 }
 
 .flag-wrapper {
@@ -428,6 +458,20 @@ nav {
 
 .direction-r .desc {
   margin: 1em 0 0 0.75em;
+}
+
+.direction-l-animation.active {
+	animation: slideLeftToRight 1.25s, fade 2.25s;
+	animation-delay: 300ms;
+	position: relative;
+	animation-fill-mode: both;
+}
+
+.direction-r-animation.active {
+	animation: slideRightToLeft 1.25s, fade 2.25s;
+	animation-delay: 300ms;
+	position: relative;
+	animation-fill-mode: both;
 }
 
 /* ================ Timeline Media Queries ================ */
@@ -609,4 +653,102 @@ nav {
 .credits p {
 	color: #e1e35f;
 }
+.footer-img {
+	opacity: 0;
+}
+.footer-img-animation.active {
+	animation-name: fadeIncrease;
+	animation-duration: 0.7s;
+	animation-delay: 300ms;
+	animation-fill-mode: both;
+}
 /* ===== end of footer section ===== */
+
+/*Animation KeyFrames*/
+@keyframes fade {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+
+@keyframes slideRightToLeft {
+0% {
+    opacity: 0;
+    transform: translate3d(100%,0,0);
+}
+100% {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+}
+
+@keyframes slideLeftToRight {
+0% {
+    opacity: 0;
+    transform: translate3d(-100%,0,0);
+}
+100% {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+}
+
+@keyframes bounce {
+0% {
+    opacity: 0;
+    transform: scale3d(0.3,0.3,0.3);
+}
+20% {
+    transform: scale3d(1.1,1.1,1.1);
+}
+40% {
+    transform: scale3d(0.9,0.9,0.9);
+}
+60% {
+    opacity: 1;
+    transform: scale3d(1.03,1.03,1.03);
+}
+80% {
+    transform: scale3d(0.97,0.97,0.97);
+}
+100% {
+    opacity: 1;
+    transform: scale3d(1,1,1);
+}
+}
+
+@keyframes fadeIncrease {
+0% {
+    opacity: 0;
+    transform: scale3d(0.3,0.3,0.3);
+}
+100% {
+    opacity: 1;
+    transform: scale3d(1,1,1);
+}
+}
+
+@keyframes slideDownToUp {
+0% {
+    opacity: 0;
+    transform: translate3d(0,50%,0);
+}
+100% {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+}
+
+@keyframes slideUpToDown {
+0% {
+    opacity: 0;
+    transform: translate3d(0,-50%,0);
+}
+100% {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+}
