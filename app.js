@@ -19,6 +19,7 @@ menu_items.forEach(item => {
 function show(){
     mainMenu.style.display = 'flex';
     mainMenu.style.top = '0';
+    mainMenu.style.height = '100%';
 }
 function close(){
     mainMenu.style.top = '-100%';
