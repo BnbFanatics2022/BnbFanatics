@@ -195,15 +195,17 @@ nav {
 	background-image: linear-gradient(to bottom, #fda085 0%, #fda085 100%);
 }
 .about-text {
-	width: 95%;
+	width: 70%;
 	padding-top: 120px;
 	opacity: 0;
+	text-align: center;
+	padding-left: 30%;
 }
 .about-text h1{
 	font-size: 50px;
 }
 .about-text p{
-	font-size: 25px;
+	font-size: 30px;
 }
 .buy-section-animation.active {
 	animation: slideUpToDown 1.25s, fade 2.25s;
