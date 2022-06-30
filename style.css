@@ -219,6 +219,18 @@ nav {
 	position: relative;
 	animation-fill-mode: both;
 }
+@media (max-width: 1000px) {
+	.about-text {
+		width: 95%;
+		padding: 10%;
+	}
+	.about-text h1 {
+		font-size: 40px;
+	}
+	.about-text p {
+		font-size: 20px;
+	}
+}
 /* ===== end of home section ===== */
 
 /* ===== tokenomics section ===== */
