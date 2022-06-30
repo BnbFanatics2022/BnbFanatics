@@ -181,11 +181,21 @@ nav {
 .buy-section {
 	margin-top: 130px;
 	border: 10px solid black;
-	width: 500px;
-	margin-left: 75px;
+	width: 100%;
+	margin-left: 14%;
 	padding-bottom: 20px;
 	box-shadow: 10px 10px 25px black;
 	opacity: 0;
+}
+.buy-section ul {
+	padding: 20px;
+	list-style: none;
+	display: flex;
+}
+.buy-section ul li {
+	margin: 20px;
+	font-size: var(--h3-font);
+	font-weight: 700;
 }
 /* ===== end of home section ===== */
 
@@ -205,7 +215,7 @@ nav {
 	font-size: 50px;
 }
 .about-text p{
-	font-size: 25px;
+	font-size: 30px;
 }
 .buy-section-animation.active {
 	animation: slideUpToDown 1.25s, fade 2.25s;
@@ -219,7 +229,7 @@ nav {
 	position: relative;
 	animation-fill-mode: both;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 	.about-text {
 		width: 95%;
 		padding: 10%;
@@ -245,7 +255,7 @@ nav {
 }
 .service-container {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+		grid-template-columns: repeat(auto-fit, minmax(240px, auto));
 		align-items: center;
 		margin-top: 2rem;
 	}
@@ -632,8 +642,12 @@ nav {
 	margin-top: 10px;
 	width: 80%;
 	padding-bottom: 20px;
-	margin-left: 14%;
+	margin-left: 15%;
 }
+.buy-section ul li {
+		font-size: 10px;
+}
+
 .home-text {
   margin-top: 50px;
 	padding-bottom: 60px;
