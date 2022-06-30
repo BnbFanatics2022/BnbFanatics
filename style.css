@@ -196,13 +196,13 @@ nav {
 	font-size: 25px;
 }
 .buy-section-animation.active {
-	animation: slideLeftToRight 1.25s, fade 2.25s;
+	animation: slideUpToDown 1.25s, fade 2.25s;
 	animation-delay: 300ms;
 	position: relative;
 	animation-fill-mode: both;
 }
 .about-text.active {
-	animation: slideRightToLeft 1.25s, fade 2.25s;
+	animation: slideDownToUp 1.25s, fade 2.25s;
 	animation-delay: 300ms;
 	position: relative;
 	animation-fill-mode: both;
@@ -222,7 +222,6 @@ nav {
 .service-container {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-		grid-gap: 1.5rem;
 		align-items: center;
 		margin-top: 2rem;
 	}
@@ -329,12 +328,14 @@ nav {
   width: 300px;
   float: left;
   text-align: right;
+	opacity: 0;
 }
 
 .direction-r {
   position: relative;
   width: 300px;
   float: right;
+	opacity: 0;
 }
 
 .flag-wrapper {
@@ -447,6 +448,20 @@ nav {
 
 .direction-r .desc {
   margin: 1em 0 0 0.75em;
+}
+
+.direction-l-animation.active {
+	animation: slideLeftToRight 1.25s, fade 2.25s;
+	animation-delay: 300ms;
+	position: relative;
+	animation-fill-mode: both;
+}
+
+.direction-r-animation.active {
+	animation: slideRightToLeft 1.25s, fade 2.25s;
+	animation-delay: 300ms;
+	position: relative;
+	animation-fill-mode: both;
 }
 
 /* ================ Timeline Media Queries ================ */
@@ -628,6 +643,15 @@ nav {
 .credits p {
 	color: #e1e35f;
 }
+.footer-img {
+	opacity: 0;
+}
+.footer-img-animation.active {
+	animation-name: fadeIncrease;
+	animation-duration: 0.7s;
+	animation-delay: 300ms;
+	animation-fill-mode: both;
+}
 /* ===== end of footer section ===== */
 
 /*Animation KeyFrames*/
@@ -686,10 +710,32 @@ nav {
 }
 }
 
+@keyframes fadeIncrease {
+0% {
+    opacity: 0;
+    transform: scale3d(0.3,0.3,0.3);
+}
+100% {
+    opacity: 1;
+    transform: scale3d(1,1,1);
+}
+}
+
 @keyframes slideDownToUp {
 0% {
     opacity: 0;
     transform: translate3d(0,50%,0);
+}
+100% {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+}
+
+@keyframes slideUpToDown {
+0% {
+    opacity: 0;
+    transform: translate3d(0,-50%,0);
 }
 100% {
     opacity: 1;
