@@ -169,14 +169,11 @@ nav {
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(3, 1fr);
-grid-gap: 1em;
+grid-gap: 10px;
 text-align: center;
 border-radius: 5px;
-background: linear-gradient(to bottom, #f6d365 20%, #fda085 100%);
-<<<<<<< HEAD
-padding-top: 2%;
-=======
->>>>>>> 6a64d9f33b0651303ce8896444b625e750de1c4a
+background: linear-gradient(to bottom, #E45826 20%, #fda085 100%);
+padding: 2%;
 }
 
 .B-title { grid-area: 1 / 1 / 2 / 4; }
@@ -654,7 +651,8 @@ padding-top: 2%;
 display: grid;
 grid-template-columns: 1fr;
 grid-template-rows: repeat(7, 1fr);
-grid-gap: 10px;
+grid-gap: 1px;
+border: 3px solid black;
 }
 
 .B-title { grid-area: 1 / 1 / 2 / 2; }
@@ -667,7 +665,8 @@ grid-gap: 10px;
 }
 /* ===== end of timeline section ===== */
 .B-title {
-	font-size: var(--h2-font)
+	font-size: var(--h2-font);
+	margin-bottom: 10px;
 }
 .c1, .c2, .c3 {
 	font-size: 1.5rem;
