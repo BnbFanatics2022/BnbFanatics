@@ -67,3 +67,41 @@ function count (){
   const obj2 = document.getElementById("perc2");
   animateValue(obj2, 0, 6, 5000);
 }
+
+function increment (){
+Number.prototype.format = function(n) {
+    var r = new RegExp('\\d(?=(\\d{3})+' + (n > 0 ? '\\.' : '$') + ')', 'g');
+    return this.toFixed(Math.max(0, Math.floor(n))).replace(r, '$&,');
+};
+
+$('.count').each(function () {
+    $(this).prop('counter', 0).animate({
+        counter: $(this).text()
+    }, {
+        duration: 5000,
+        easing: 'easeOutExpo',
+        step: function (step) {
+            $(this).text('' + step.format());
+        }
+    });
+});
+}
+
+const elements = document.querySelectorAll('.count');
+const callback = str => { console.log(str); };
+const observer = new IntersectionObserver(handleIntersection);
+
+elements.forEach(obs => {
+  observer.observe(obs);
+});
+
+function handleIntersection(entries, observer){
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > 0) {
+      increment();
+      count();
+      callback('observer-' + entry.target.getAttribute('count'));
+      observer.unobserve(entry.target);
+    }
+  });
+}
