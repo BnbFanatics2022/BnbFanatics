@@ -696,6 +696,12 @@ border: 3px solid black;
 .bttn1 { grid-area: 3 / 1 / 4 / 2; }
 .bttn2 { grid-area: 5 / 1 / 6 / 2; }
 .bttn3 { grid-area: 7 / 1 / 8 / 2; }
+
+nav .logo-animation.active {
+ animation: logoSlide 0s;
+ position: relative;
+ animation-fill-mode: both;
+}
 }
 /* ===== end of timeline section ===== */
 .B-title {
