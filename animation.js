@@ -125,7 +125,7 @@ typeWriter();
 
 function MediaQuery(x) {
   if (x.matches) { // If media query matches
-    document.getElementById("typing").style.height = "500px";
+    document.getElementById("typing").style.height = "510px";
     document.getElementById("typing").style.paddingTop = "20px";
   } else {
     document.getElementById("typing").style.height = "250px";
