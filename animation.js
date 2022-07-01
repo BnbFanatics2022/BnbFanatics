@@ -121,3 +121,17 @@ function typeWriter() {
   }
 }
 typeWriter();
+
+
+function MediaQuery(x) {
+  if (x.matches) { // If media query matches
+    document.getElementById("typing").style.height = "500px";
+    document.getElementById("typing").style.paddingTop = "20px";
+  } else {
+    document.getElementById("typing").style.height = "250px";
+  }
+}
+
+var x = window.matchMedia("(max-width: 720px)")
+MediaQuery(x) // Call listener function at run time
+x.addListener(MediaQuery) // Attach listener function on state changes
