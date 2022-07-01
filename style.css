@@ -173,7 +173,10 @@ grid-gap: 1em;
 text-align: center;
 border-radius: 5px;
 background: linear-gradient(to bottom, #f6d365 20%, #fda085 100%);
+<<<<<<< HEAD
 padding-top: 2%;
+=======
+>>>>>>> 6a64d9f33b0651303ce8896444b625e750de1c4a
 }
 
 .B-title { grid-area: 1 / 1 / 2 / 4; }
@@ -288,6 +291,7 @@ padding-top: 2%;
 		line-height: 1.7;
 		font-size: 1.5rem;
 		font-weight: bold;
+		display: inline;
 	}
 .s-box1-animation.active {
 	animation-name: bounce;

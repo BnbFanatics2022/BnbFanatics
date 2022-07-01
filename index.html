@@ -72,19 +72,19 @@
       <div class="s-box s-box1-animation">
         <img src="Supply.png">
         <h3>Supply</h3>
-        <p>100,000,000,000</p>
+        <p class="count">100000000000</p>
       </div>
 
       <div class="s-box s-box2-animation">
         <img src="liquidity.png">
         <h3>Liquidity</h3>
-        <p>3%</p>
+        <p id="perc1">0</p><p>%</p>
       </div>
 
       <div class="s-box s-box3-animation">
         <img src="Marketing.png">
         <h3>Marketing</h3>
-        <p>6%</p>
+        <p id="perc2">0</p><p>%</p>
       </div>
     </div>
   </section>
@@ -189,8 +189,47 @@
 }
   </script>
   <script src="animation.js"></script>
-  <script src="app.js">
+  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script>
+  const elements = document.querySelectorAll('.count');
+  const callback = str => { console.log(str); };
+  const observer = new IntersectionObserver(handleIntersection);
 
+  elements.forEach(obs => {
+    observer.observe(obs);
+  });
+
+  function handleIntersection(entries, observer){
+    entries.forEach(entry => {
+      if (entry.intersectionRatio > 0) {
+        increment();
+        count();
+        callback('observer-' + entry.target.getAttribute('count'));
+        observer.unobserve(entry.target);
+      }
+    });
+  }
+
+  function increment (){
+  Number.prototype.format = function(n) {
+      var r = new RegExp('\\d(?=(\\d{3})+' + (n > 0 ? '\\.' : '$') + ')', 'g');
+      return this.toFixed(Math.max(0, Math.floor(n))).replace(r, '$&,');
+  };
+
+  $('.count').each(function () {
+      $(this).prop('counter', 0).animate({
+          counter: $(this).text()
+      }, {
+          duration: 5000,
+          easing: 'easeOutExpo',
+          step: function (step) {
+              $(this).text('' + step.format());
+          }
+      });
+  });
+}
   </script>
   </body>
 </html>
