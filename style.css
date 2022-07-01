@@ -37,6 +37,7 @@ nav {
 	 position: fixed;
 	 width: 100%;
 	 z-index: 1;
+	 overflow: hidden;
  }
  nav .mainMenu {
 	 display: flex;
@@ -51,6 +52,42 @@ nav {
 	 color: rgb(255, 255, 255);
 	 font-size: 18px;
 	 transition: 0.2s ease;
+ }
+ nav .mainMenu li {
+	 visibility: hidden;
+ }
+ nav .mainMenu li.up-animation-1.active {/*3*/
+	animation: navUp 1.25s;
+ 	animation-delay: 1150ms;
+ 	position: relative;
+ 	animation-fill-mode: both;
+ }
+ nav .mainMenu li.up-animation-2.active {/*1*/
+ animation: navUp 1.25s;
+	 animation-delay: 600ms;
+	 position: relative;
+	 animation-fill-mode: both;
+ }
+ nav .mainMenu li.down-animation-1.active {/*4*/
+	 animation: navDown 1.25s;
+  	animation-delay: 1350ms;
+  	position: relative;
+  	animation-fill-mode: both;
+ }
+ nav .mainMenu li.down-animation-2.active {/*2*/
+	animation: navDown 1.25s;
+	 animation-delay: 900ms;
+	 position: relative;
+	 animation-fill-mode: both;
+ }
+ nav .logo {
+	 visibility: hidden;
+ }
+ nav .logo-animation.active {
+	animation: logoSlide 4s;
+ 	position: relative;
+ 	animation-fill-mode: both;
+	animation-timing-function: ease-out;
  }
  nav .mainMenu li a:hover {
 	 color: yellow;
@@ -790,5 +827,35 @@ border: 3px solid black;
 100% {
     opacity: 1;
     transform: translate3d(0,0,0);
+}
+}
+
+@keyframes navUp {
+0% {
+    transform: translateY(50px);
+}
+100% {
+		visibility: visible;
+		transform: translateY(0px);
+}
+}
+
+@keyframes navDown {
+0% {
+    transform: translateY(-50px);
+}
+100% {
+		visibility: visible;
+    transform: translateY(0px);
+}
+}
+
+@keyframes logoSlide {
+0% {
+    transform: translateX(1500px);
+}
+100% {
+		visibility: visible;
+    transform: translateX(0px);
 }
 }

@@ -30,6 +30,10 @@ function addObserver(el, options){
     observer.observe(el)
 }
 
+scrollTrigger('.up')
+scrollTrigger('.down')
+scrollTrigger('.logo')
+
 //About Section animation
 scrollTrigger('.about-text')
 scrollTrigger('.buy-section')
