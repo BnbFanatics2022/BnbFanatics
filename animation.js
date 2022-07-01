@@ -105,3 +105,19 @@ function handleIntersection(entries, observer){
     }
   });
 }
+
+var i = 0;
+var txt = 'A Community driven token with focus on educating and facilitating blockchain adoption around the globe.';
+var speed = 30;
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("typing").style.fontSize = "2rem";
+    document.getElementById("typing").style.fontWeight = "650";
+    document.getElementById("typing").style.textAlign = "center";
+    document.getElementById("typing").style.margin = "1.5rem 1.5rem 1.5rem";
+    document.getElementById("typing").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+typeWriter();

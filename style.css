@@ -152,11 +152,7 @@ nav {
 	font-size: var(--big-font);
 	color: var(--main-color);
 	text-align: center;
-}
-.home-text h2 {
-	font-size: var(--h2-font);
-	margin: 1rem 0 2rem;
-	text-align: center;
+	padding-bottom: 10px;
 }
 .home h3 {
 	font-size: var(--h3-font);
