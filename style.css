@@ -172,7 +172,7 @@ grid-template-rows: repeat(3, 1fr);
 grid-gap: 10px;
 text-align: center;
 border-radius: 5px;
-background: linear-gradient(to bottom, #E45826 20%, #fda085 100%);
+background: transparent;
 padding: 2%;
 }
 
@@ -218,6 +218,7 @@ padding: 2%;
 	opacity: 0;
 	text-align: center;
 	padding-left: 30%;
+	background: transparent;
 }
 .about-text h1{
 	font-size: 50px;
