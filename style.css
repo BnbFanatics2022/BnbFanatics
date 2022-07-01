@@ -286,6 +286,7 @@ background: linear-gradient(to bottom, #f6d365 20%, #fda085 100%);
 		line-height: 1.7;
 		font-size: 1.5rem;
 		font-weight: bold;
+		display: inline;
 	}
 .s-box1-animation.active {
 	animation-name: bounce;

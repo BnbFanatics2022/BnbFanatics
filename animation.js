@@ -46,3 +46,24 @@ scrollTrigger('.team-member')
 
 //Footer animation
 scrollTrigger('.footer-img')
+
+
+function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (end - start) + start);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+function count (){
+  const obj1 = document.getElementById("perc1");
+  animateValue(obj1, 0, 3, 5000);
+  const obj2 = document.getElementById("perc2");
+  animateValue(obj2, 0, 6, 5000);
+}
