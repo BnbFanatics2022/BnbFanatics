@@ -494,7 +494,6 @@ padding: 2%;
 
 .time-wrapper {
   display: inline;
-
   line-height: 1em;
   font-size: 0.66666em;
   color: rgb(255, 215, 0);
@@ -559,7 +558,6 @@ padding: 2%;
 .direction-r {
 	float: none;
 	width: 100%;
-
 	text-align: center;
 }
 
@@ -640,6 +638,19 @@ padding: 2%;
 .timeline:before {
 	opacity: 0;
 }
+.direction-l-animation.active {
+	animation: slideDownToUp 1.25s, fade 2.25s;
+	animation-delay: 300ms;
+	position: relative;
+	animation-fill-mode: both;
+}
+
+.direction-r-animation.active {
+	animation: slideDownToUp 1.25s, fade 2.25s;
+	animation-delay: 300ms;
+	position: relative;
+	animation-fill-mode: both;
+}
 }
 @media (max-width: 1560px) {
 	:root {
@@ -701,6 +712,18 @@ nav .logo-animation.active {
  animation: logoSlide 0s;
  position: relative;
  animation-fill-mode: both;
+}
+.buy-section-animation.active {
+	animation: slideLeftToRight 1.25s, fade 2.25s;
+	animation-delay: 300ms;
+	position: relative;
+	animation-fill-mode: both;
+}
+.about-text.active {
+	animation: slideRightToLeft 1.25s, fade 2.25s;
+	animation-delay: 300ms;
+	position: relative;
+	animation-fill-mode: both;
 }
 }
 /* ===== end of timeline section ===== */
