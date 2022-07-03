@@ -207,6 +207,7 @@ text-align: center;
 border-radius: 5px;
 background: transparent;
 padding: 2%;
+opacity: 0;
 }
 
 .B-title { grid-area: 1 / 1 / 2 / 4; }
