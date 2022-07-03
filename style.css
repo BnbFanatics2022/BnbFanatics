@@ -714,13 +714,13 @@ nav .logo-animation.active {
  animation-fill-mode: both;
 }
 .buy-section-animation.active {
-	animation: slideLeftToRight 1.25s, fade 2.25s;
+	animation: slideDownToUp 1.25s, fade 2.25s;
 	animation-delay: 300ms;
 	position: relative;
 	animation-fill-mode: both;
 }
 .about-text.active {
-	animation: slideRightToLeft 1.25s, fade 2.25s;
+	animation: slideUpToDown 1.25s, fade 2.25s;
 	animation-delay: 300ms;
 	position: relative;
 	animation-fill-mode: both;
