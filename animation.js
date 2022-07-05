@@ -111,7 +111,7 @@ function handleIntersection(entries, observer){
 }
 
 var i = 0;
-var txt = 'A Community driven token with focus on education and facilitation of blockchain adoption world wide.';
+var txt = 'A community driven token with focus on education and facilitation of blockchain adoption worldwide.';
 var speed = 30;
 function typeWriter() {
   if (i < txt.length) {
