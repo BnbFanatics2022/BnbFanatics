@@ -67,7 +67,7 @@ function animateValue(obj, start, end, duration) {
 
 function count (){
   const obj1 = document.getElementById("perc1");
-  animateValue(obj1, 0, 3, 5000);
+  animateValue(obj1, 0, 2, 5000);
   const obj2 = document.getElementById("perc2");
   animateValue(obj2, 0, 6, 5000);
 }
@@ -111,7 +111,7 @@ function handleIntersection(entries, observer){
 }
 
 var i = 0;
-var txt = 'A Community driven token with focus on educating and facilitating blockchain adoption around the globe.';
+var txt = 'A Community driven token with focus on education and facilitation of blockchain adoption world wide.';
 var speed = 30;
 function typeWriter() {
   if (i < txt.length) {
