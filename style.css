@@ -670,7 +670,7 @@ opacity: 0;
 /*Media Query fpr all*/
 @media (max-width: 720px) {
 	body {
-		width: 115%;
+		margin-right: -50px;
 	}
 	header {
 		padding: 10px 16px;
