@@ -669,7 +669,7 @@ opacity: 0;
 
 /*Media Query fpr all*/
 @media (max-width: 720px) {
-	body {
+	:root {
 		margin-right: -50px;
 	}
 	header {
