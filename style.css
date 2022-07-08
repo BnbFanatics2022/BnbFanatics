@@ -343,6 +343,12 @@ opacity: 0;
 	animation-delay: 500ms;
 	animation-fill-mode: both;
 }
+.s-box4-animation.active {
+	animation-name: bounce;
+	animation-duration: 0.7s;
+	animation-delay: 600ms;
+	animation-fill-mode: both;
+}
 /* ===== end of tokenomics section ===== */
 
 

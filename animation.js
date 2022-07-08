@@ -69,7 +69,9 @@ function count (){
   const obj1 = document.getElementById("perc1");
   animateValue(obj1, 0, 2, 5000);
   const obj2 = document.getElementById("perc2");
-  animateValue(obj2, 0, 6, 5000);
+  animateValue(obj2, 0, 1, 5000);
+  const obj3 = document.getElementById("perc3");
+  animateValue(obj3, 0, 6, 5000);
 }
 
 function increment (){
